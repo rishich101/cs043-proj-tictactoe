@@ -7,9 +7,9 @@ class Game:
 
     # __init__ method creates the board and player objects.
     def __init__(self):
-        self.player1 = Player("X")
-        self.player2 = Player("O")
-        self.board = Board()
+        self.player1 = player.Player("X")
+        self.player2 = player.Player("O")
+        self.board = board.Board()
 
     # print_valid_entries method shows the valid input for playing the game.
     def print_valid_entries(self):
