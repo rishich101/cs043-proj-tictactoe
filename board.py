@@ -15,7 +15,6 @@ class Board:
         print(self.board["BL"] + "|" + self.board["BM"] \
               + "|" + self.board["BR"] + "|")
 
-    # Tejas:
     def _is_valid_move(self, position):
         if self.board[position] == " ":
             return True
