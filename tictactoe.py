@@ -27,4 +27,10 @@ def play():
 
 if __name__ == "__main__":
     play()
-
+    while True:
+        print('Do you want to play again?(Yes or No)', end=' ')
+        x=input().lower()
+        if x == 'yes':
+            play()
+        else:
+            break
