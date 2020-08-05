@@ -10,8 +10,12 @@ def play():
     while num > 0:
         num -= 1
         g.print_board()
-        position = input("{} turn, what's your move? ".format(player))
-        g.modify_board(position, player.type)
+        while True:
+            position = input("{} turn, what's your move? ".format(player))
+            if g.is_valid_position(position):
+                break
+            print("Valid options are {}".format(g.valid_positions()))
+        g.modify_board(position.upper(), player.type)
         if g.won_game(player):
             print("{} is the Winner!".format(player))
             break

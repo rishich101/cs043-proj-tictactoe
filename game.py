@@ -2,6 +2,7 @@
 import board
 import player
 
+
 # This class will be used to play a single game between two players.
 class Game:
 
@@ -10,6 +11,17 @@ class Game:
         self.player1 = player.Player("X")
         self.player2 = player.Player("O")
         self.board = board.Board()
+
+    # valid_positions returns the list of valid positions to be used.
+    def valid_positions(self):
+        return ['TL', 'ML', 'BL', 'TM', 'MM', 'BM', 'TR', 'MR', 'BR']
+
+    # is_valid_position checks if the input position is valid from the list.
+    def is_valid_position(self, position):
+        positions = self.valid_positions()
+        if position.upper() in positions:
+            return True
+        return False
 
     # print_valid_entries method shows the valid input for playing the game.
     def print_valid_entries(self):
