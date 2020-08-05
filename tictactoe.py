@@ -2,6 +2,7 @@
 
 import game
 
+# play function starts one game.
 def play():
     g = game.Game()
     g.print_valid_entries()
@@ -29,7 +30,7 @@ if __name__ == "__main__":
     play()
     while True:
         print('Do you want to play again?(Yes or No)', end=' ')
-        x=input().lower()
+        x = input().lower()
         if x == 'yes':
             play()
         else:
