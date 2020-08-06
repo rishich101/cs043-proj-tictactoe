@@ -1,0 +1,11 @@
+Rules: The rules of this game are the same as the original tic tac toe rules.
+
+How the Game is Played:
+1. The two players are input into the game as Player X and Player O, and their symbols are X and O,respectively.
+2. It is up to the users in real-time(assuming they’re sharing a device that can
+    run Python files) to pick who gets to Player X or Player O.
+3. Then both players press a button to play the game.
+4. Once the players get matched up with each other. Player one plays his/her move and player two plays their move.
+5. Their move is printed on the screen and then they go back and forth playing moves.
+6. Once someone wins, the winner gets told that they won the game.
+7. The program is broken out of,and can be recalled through calling play().

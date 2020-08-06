@@ -1,0 +1,7 @@
+The design of our object-oriented Tic-Tac-Toe game will consist of using a class to represent the players and contain
+functions that will allow the players to place their respective symbols in, as well as another class to contain
+functions that create the game board as an object and give each of the 9 empty spaces as various attributes of the
+board. There will also be multiple functions used in evaluating empty/taken spaces and drawing the board.The board
+will be stored under a class. Each of the attributes that stand for the attributes of the board will be allowed to be
+called upon as two letter combos (ex:TL for top-left,MR for mid-right,etc) by the players in order for them to be able
+to place their symbols through a calling function.
